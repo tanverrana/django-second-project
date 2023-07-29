@@ -5,8 +5,16 @@ from django.http import HttpResponse
 
 
 def courses(request):
-    return HttpResponse("This is course page that is created in second app.")
+    return HttpResponse('''
+                        <h3>This is Course page that is created in Second app.</h3>
+                        <a href ='/second_app/feedback/'>Feedback</a>
+                        
+                        ''')
 
 
 def feedback(request):
-    return HttpResponse("This is feedback page that is created in second app.")
+    return HttpResponse('''
+                        <h3>This is Feedback page that is created in second app.</h3>
+                        <a href ='/second_app/courses/'>Courses</a>
+                        
+                        ''')
