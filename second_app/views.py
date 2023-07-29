@@ -7,6 +7,8 @@ from django.http import HttpResponse
 def courses(request):
     return HttpResponse('''
                         <h3>This is Course page that is created in Second app.</h3>
+                        <a href ='/first_app/about/'>About</a>
+                        <a href ='/first_app/contact/'>Contact</a>
                         <a href ='/second_app/feedback/'>Feedback</a>
                         
                         ''')
@@ -15,6 +17,8 @@ def courses(request):
 def feedback(request):
     return HttpResponse('''
                         <h3>This is Feedback page that is created in second app.</h3>
+                        <a href ='/first_app/about/'>About</a>
+                        <a href ='/first_app/contact/'>Contact</a>
                         <a href ='/second_app/courses/'>Courses</a>
                         
                         ''')
